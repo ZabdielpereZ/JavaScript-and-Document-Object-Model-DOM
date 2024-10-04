@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom.js</title>
+    <script src="dom.js" async></script>
+</head>
+<body>
+    <!--Alert-->
+   <!-- <script>
+        alert("Welcome to products, here's what we got! Laptop, Smartphone, Headphones")
+    </script> -->
+
+    <div id="container">
+        <h2>Welcome to Product List</h2>
+        <p id="message" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Here's some info on our products</p>
+        <!-- newParagraph gets appended -->
+    </div>
+    <button onclick="updateParagraph()">More info</button>
+    
+    <hr>
+    <br>
+    <!--Form-->
+    <form>
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" onclick="changecolor5()" 
+            name="username" required>
+        </div><br>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" 
+            onclick="changecolor4()"name="password" required>
+        </div><br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" onclick="changecolor3()" name="email" required>
+        </div><br>
+        <div class="form-floating">
+            <label for="textarea">Comments:</label><br>
+            <textarea class="form-control" placeholder="Leave a comment here" id="Textarea" 
+            onclick="changecolor2()" style="height: 100px" required></textarea>
+          </div>
+        <div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <div id="box" onclick="changecolor()">
+    Click me to change color
+    </div>
+
+
+</body>
+</html>
